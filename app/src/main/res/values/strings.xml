@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Quizz App Banker</string>
+
+    <string name="can_you">can you become a</string>
+    <string name="if_you">If you want to know, you have to answer the quiz !</string>
+    <string name="your_name">Please, enter your name</string>
+
+    <string name="q1">1. What banking products are you using ?</string>
+    <string name="q1a1">Credit card</string>
+    <string name="q1a2">Current account</string>
+    <string name="q1a3">Consumer loan</string>
+    <string name="q1a4">Mortgage loan</string>
+    <string name="q1a5">Internet banking</string>
+
+    <string name="hint">Enter your answer here</string>
+    <string name="verif_answ">You did not answer at question 3 !</string>
+
+    <string name="your_score">your score is</string>
+    <string name="points">points out of</string>
+    <string name="improve">You have to improve your financial knowledge</string>
+    <string name="about">You are about to become a banker</string>
+    <string name="already">You are already a banker</string>
+    <string name="congrats">Congratulations</string>
+
+
+</resources>

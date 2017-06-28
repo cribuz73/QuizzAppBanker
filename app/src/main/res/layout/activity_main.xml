@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16sp"
+        android:paddingRight="16sp"
+        android:paddingStart="16sp"
+        tools:context="com.example.cristi.justjava.MainActivity">
+
+        <TextView
+            style="@style/front"
+            android:text="@string/can_you" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/banker" />
+
+        <TextView
+            style="@style/front_text"
+            android:text="@string/if_you" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:hint="@string/your_name"
+            android:inputType="textCapWords" />
+
+        <TextView
+            style="@style/question"
+            android:text="@string/q1" />
+
+        <CheckBox
+            android:id="@+id/creditCard"
+            style="@style/answer"
+            android:text="@string/q1a1" />
+
+        <CheckBox
+            android:id="@+id/currentAcc"
+            style="@style/answer"
+            android:text="@string/q1a2" />
+
+        <CheckBox
+            android:id="@+id/consumerLoan"
+            style="@style/answer"
+            android:text="@string/q1a3" />
+
+        <CheckBox
+            android:id="@+id/mortgageLoan"
+            style="@style/answer"
+            android:text="@string/q1a4" />
+
+        <CheckBox
+            android:id="@+id/internetBanking"
+            style="@style/answer"
+            android:text="@string/q1a5" />
+
+        <TextView
+            style="@style/question"
+            android:text="2. You can say about you:" />
+
+        <CheckBox
+            android:id="@+id/pensionFound"
+            style="@style/answer"
+            android:text="I am enroled in a pension scheme." />
+
+        <CheckBox
+            android:id="@+id/stock"
+            style="@style/answer"
+            android:text="I traded stocks or bonds, even once." />
+
+        <CheckBox
+            android:id="@+id/finNews"
+            style="@style/answer"
+            android:text="I am interested in financial news." />
+
+        <TextView
+            style="@style/question"
+            android:text="3. If you have an account of $100 and the bank offers you a 5% interest, what ammount of money will you have after 5 years ? " />
+
+        <EditText
+            android:id="@+id/answer"
+            style="@style/answer"
+            android:hint="@string/hint"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            style="@style/question"
+            android:text="4. When you need money, whom are you asking first ? " />
+
+        <CheckBox
+            android:id="@+id/friends"
+            style="@style/answer"
+            android:text="Friends" />
+
+        <CheckBox
+            android:id="@+id/banks"
+            style="@style/answer"
+            android:text="Banks" />
+
+        <CheckBox
+            android:id="@+id/loan_companies"
+            style="@style/answer"
+            android:text="Loan companies" />
+
+        <CheckBox
+            android:id="@+id/other_persons"
+            style="@style/answer"
+            android:text="Other persons" />
+
+        <TextView
+            style="@style/question"
+            android:text="5. Which is a safer investment ? " />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/stocks"
+                style="@style/answer"
+                android:onClick="onInvestment"
+                android:text="stocks" />
+
+            <RadioButton
+                android:id="@+id/bonds"
+                style="@style/answer"
+                android:onClick="onInvestment"
+                android:text="bonds" />
+
+            <RadioButton
+                android:id="@+id/know"
+                style="@style/answer"
+                android:onClick="onInvestment"
+                android:text="I don't know." />
+        </RadioGroup>
+
+        <TextView
+            style="@style/question"
+            android:text="6. What are you doing with your extra money ? " />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/shopping"
+                style="@style/answer"
+                android:onClick="onFinDecision"
+                android:text="shopping" />
+
+            <RadioButton
+                android:id="@+id/deposit"
+                style="@style/answer"
+                android:onClick="onFinDecision"
+                android:text="bank deposit" />
+
+            <RadioButton
+                android:id="@+id/cash"
+                style="@style/answer"
+                android:onClick="onFinDecision"
+                android:text="keep in cash" />
+
+            <RadioButton
+                android:id="@+id/investments"
+                style="@style/answer"
+                android:onClick="onFinDecision"
+                android:text="investments" />
+
+            <RadioButton
+                android:id="@+id/no_extra"
+                style="@style/answer"
+                android:onClick="onFinDecision"
+                android:text="I do not have extra money." />
+        </RadioGroup>
+
+        <Button
+            style="@style/final_button"
+            android:onClick="submitAnswers"
+            android:text="Submit answers" />
+    </android.support.v7.widget.LinearLayoutCompat>
+</ScrollView>
